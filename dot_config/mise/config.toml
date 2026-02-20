@@ -62,3 +62,10 @@ paranoid = false
 
 [settings.npm]
 package_manager = "bun"
+
+[tasks.update]
+run = [
+  'brew update',
+  'brew upgrade --formulae',
+  'brew --casks upgrade',
+]
