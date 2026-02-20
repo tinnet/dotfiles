@@ -67,5 +67,6 @@ package_manager = "bun"
 run = [
   'brew update',
   'brew upgrade --formulae',
-  'brew --casks upgrade',
+  'brew upgrade --casks',
+  'mise up',
 ]
