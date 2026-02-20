@@ -1,0 +1,11 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "enabled_providers": ["anthropic", "openai"],
+  "share": "disabled",
+  "formatter": {
+    "custom-markdown-formatter": {
+      "command": ["google-java-format", "--replace", "$FILE"],
+      "extensions": [".java"]
+    }
+  }
+}
