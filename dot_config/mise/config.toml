@@ -1,0 +1,64 @@
+[tools]
+"aqua:ayoisaiah/f2" = "latest"
+"cargo:fclones" = "latest" # no macos in aqua
+"forgejo:mergiraf/mergiraf" = "latest"
+"github:nikolassv/bartib" = "latest"
+"github:simulot/immich-go" = "latest"
+"npm:@mariozechner/pi-coding-agent" = "latest"
+"pipx:iredis" = "latest"
+ast-grep = "latest"
+atuin = "latest"
+bat = "latest"
+bottom = "latest"
+bun = "latest"
+cargo-binstall = "latest"
+claude-code = "latest"
+cloudflared = "latest"
+cosign = "latest"
+difftastic = "latest"
+duf = "latest"
+dust = "latest"
+fastfetch = "latest"
+fd = "latest"
+gh = "latest"
+go = "latest"
+gradle = "latest"
+gron = "latest"
+hyperfine = "latest"
+java = "latest"
+jq = "latest"
+just = "latest"
+kotlin = "latest"
+lazydocker = "latest"
+maven = "latest"
+node = "latest"
+opencode = "latest"
+python = "latest"
+qsv = "latest"
+restish = "latest"
+ripgrep = "latest"
+ruby = "latest"
+ruff = "latest"
+shellcheck = "latest"
+usql = "latest"
+uv = "latest"
+xh = "latest"
+yt-dlp = "latest"
+zoxide = "latest"
+codex = "latest"
+rye = "latest"
+curlie = "latest"
+"pipx:mistral-vibe" = "latest"
+"github:google/google-java-format" = "latest"
+chezmoi = "latest"
+
+[settings]
+cargo_binstall = true
+experimental = true
+python_compile = false
+idiomatic_version_file_enable_tools = ["python"]
+gpg_verify = true
+paranoid = false
+
+[settings.npm]
+package_manager = "bun"
