@@ -1,0 +1,14 @@
+#!/bin/sh
+# lefthook.yml hash: {{ include "lefthook.yml" | sha256sum }}
+# mise.toml hash: {{ include "mise.toml" | sha256sum }}
+# Re-runs automatically when lefthook.yml or mise.toml changes.
+
+set -e
+
+cd "{{ .chezmoi.sourceDir }}"
+
+echo "Installing repo-local tools (gitleaks, lefthook)..."
+mise install
+
+echo "Installing lefthook git hooks..."
+lefthook install

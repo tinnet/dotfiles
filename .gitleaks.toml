@@ -1,0 +1,13 @@
+# https://github.com/gitleaks/gitleaks
+# Using the default ruleset (222 rules) — covers AWS, GCP, SSH keys,
+# API tokens, passwords, etc.
+
+[extend]
+useDefault = true
+
+# Add path or regex allowlists here if you get false positives, e.g.:
+# [[allowlists]]
+# description = "chezmoi templates with dummy placeholders"
+# paths = ['''\.tmpl$''']
+#
+# For one-off exceptions, add the gitleaks fingerprint to .gitleaksignore
