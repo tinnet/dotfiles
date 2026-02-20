@@ -1,0 +1,36 @@
+
+
+# basics
+alias ls='eza --icons'
+alias lsa='ls -a'
+alias ll='eza -lh --group-directories-first --icons'
+alias lla='ll -a'
+alias grep='grep --color=auto'
+
+
+# magic
+cpr() {
+  rsync --archive -hh --partial --info=stats1,progress2 --modify-window=1 "$@"
+} 
+mvr() {
+  rsync --archive -hh --partial --info=stats1,progress2 --modify-window=1 --remove-source-files "$@"
+}
+alias j='just'
+alias ujust='just --justfile ~/.config/user.justfile --working-directory .'
+alias uj='ujust'
+
+# fun
+alias weather="curl wttr.in/montreal"
+
+# less typing....
+alias cm='chezmoi'
+alias cd..='cd ..'
+
+alias brews='brew search'
+alias brewi='brew install'
+alias caski='brew install --cask'
+alias casks='brew search --cask'
+
+# docker
+alias dc='docker compose'
+alias dcud='docker compose up -d'

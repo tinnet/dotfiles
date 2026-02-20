@@ -1,0 +1,6 @@
+eval "$(mise activate zsh --shims)"
+
+
+# Added by Toolbox App
+export PATH="$PATH:/Users/selkie/Library/Application Support/JetBrains/Toolbox/scripts"
+
