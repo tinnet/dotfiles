@@ -1,0 +1,12 @@
+{{ $name := promptStringOnce . "name" "What is your name" }}
+{{ $email := promptStringOnce . "email" "What is your email address" }}
+
+sourceDir = {{ .chezmoi.sourceDir | quote }}
+
+[data]
+  name: {{ $name | quote }}
+  email: {{ $email | quote }}
+
+[git]
+    autoCommit = true
+    autoPush = false
