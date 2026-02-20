@@ -5,6 +5,21 @@
 [extend]
 useDefault = true
 
+# Custom rules
+[[rules]]
+id = "email-address"
+description = "Detected an email address — avoid committing personal emails to public dotfiles."
+regex = '''[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}'''
+tags = ["email", "pii"]
+
+  [rules.allowlists]
+  description = "Ignore noreply and example emails"
+  regexes = [
+    '''noreply@''',
+    '''@example\.(?:com|org|net)''',
+    '''@users\.noreply\.github\.com''',
+  ]
+
 # Add path or regex allowlists here if you get false positives, e.g.:
 # [[allowlists]]
 # description = "chezmoi templates with dummy placeholders"
